@@ -11,6 +11,7 @@ public class Hello {
             System.out.println("And I am scared of aliens");
         }
 
+
         int topscore = 80;
         if (topscore < 100){
             System.out.println("You got the high score");
