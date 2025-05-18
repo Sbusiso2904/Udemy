@@ -22,6 +22,7 @@ public class Hello {
             System.out.println("Greater than second top score and less than 100");
         }
 
+
         if ((topscore > 90) || (secondTopscore <= 90)){
             System.out.println("Either or both of the conditions are true");
         }
@@ -36,8 +37,17 @@ public class Hello {
             System.out.println("This is not supposed to happen");
         }
 
-        double var = 20.00;
-        double vaz = 80.00;
-        double var + double vaz * 100.00;
+
+        double FirstVar = 20.00d;
+        double SecondVar = 80.00d ;
+        double ValueTotal = FirstVar + SecondVar * 100.00;{
+            System.out.println(ValueTotal);
+        double theRemainder = ValueTotal % 40.00d;
+            System.out.println("Remainder =" + theRemainder);
+        boolean isNoRemainder = (theRemainder == 0) ? true : false;
+        if (!isNoRemainder){
+            System.out.println("Got some remainder");
+        }
+        }
     }
 }
