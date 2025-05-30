@@ -28,7 +28,9 @@ public class MethodChallenge {
         if(player_score >= 1000) {
             position = 1;
         } else if(player_score >= 500 ){
+
             position = 2;
+
         } else if(player_score >= 100 ){
             position = 3;
         }
