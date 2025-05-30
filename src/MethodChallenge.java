@@ -37,5 +37,6 @@ public class MethodChallenge {
 
         return position;
     }
+    System.out.println("Top G");
 }
 
