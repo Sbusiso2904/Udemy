@@ -23,16 +23,17 @@ public class MethodChallenge {
     public  static int CalculateHighSorePosition(int player_score){
         //return  int highScorePosition = 1 && 4;
 
-        if(player_score >= 1000) {
-            return 1;
-        } else if(player_score >= 500 && player_score < 1000){
-            return 2;
-        } else if(player_score >= 100 && player_score < 500){
-            return 3;
-        } else {
-            return 4;
+        int position = 4;
 
+        if(player_score >= 1000) {
+            position = 1;
+        } else if(player_score >= 500 ){
+            position = 2;
+        } else if(player_score >= 100 ){
+            position = 3;
         }
+
+        return position;
     }
 }
 
