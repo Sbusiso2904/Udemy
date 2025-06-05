@@ -37,7 +37,6 @@ public class BarkingDog {
         // then you should wake up.
 
         return barking && (hourOfDay < 8 || hourOfDay > 22);
-
     }
 }
 
