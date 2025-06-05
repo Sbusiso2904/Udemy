@@ -1,3 +1,5 @@
+package Coding_Exercises;
+
 public class MethodChallenge {
     public static void main(String[] args) {
         int displayHighScorePosition = CalculateHighSorePosition(1500);

@@ -1,3 +1,5 @@
+package Coding_Exercises;
+
 public class BarkingDog {
     public static boolean shouldWakeUp(boolean barking, int hourOfDay){
         //     //int hrs = hourOfDay;

@@ -1,3 +1,5 @@
+package Coding_Exercises;
+
 public class PositiveNegativeZero {
 
     public static void checkNumber(int number){;

@@ -1,3 +1,5 @@
+package Coding_Exercises;
+
 public class SpeedConverter {
 
     public static long toMilesPerHour(double kilometerPerHour){
