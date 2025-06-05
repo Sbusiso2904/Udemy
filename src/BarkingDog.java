@@ -32,6 +32,7 @@ public class BarkingDog {
         if (hourOfDay < 0 || hourOfDay > 23){
             return false;
         }
+
         // if the dog is barking, and it's before 8am or after 10pm,
         // then you should wake up.
 
