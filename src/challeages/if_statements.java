@@ -16,7 +16,7 @@ public class if_statements {
         levelCompleted = 8;
         bonus = 200;
 
-        //hgfsghjkhgxfhjgghghhffgxfzhjgkghxfgchkjjhfhgjjkgfytyyfrsssxgfhhlkpoihiop[p];
+
 
 
 
