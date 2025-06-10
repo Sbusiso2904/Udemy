@@ -11,7 +11,6 @@ public class if_statements {
 
         int highscore = calculateScore(gameOver, score, levelCompleted, bonus );
         System.out.println("The highScore is " + highscore);
-
         score = 10000;
         levelCompleted = 8;
         bonus = 200;
