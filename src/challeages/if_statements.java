@@ -16,9 +16,6 @@ public class if_statements {
         bonus = 200;
 
 
-
-
-
         System.out.println("The next highScore is " +
             calculateScore(gameOver, score, levelCompleted, bonus));
     }
