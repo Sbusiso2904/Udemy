@@ -20,6 +20,7 @@ public static void main  (String[] args){
         //System.out.println("remainingMinutes ="+remainingMinutes);
 
         //int remainingMinutes = seconds % 60;
+
         //System.out.println("remainingSeconds ="+remainingSeconds);
 
         //One step approach to get hours
