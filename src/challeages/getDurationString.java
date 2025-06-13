@@ -28,7 +28,6 @@ public static void main  (String[] args){
 
        // return hours + "h" + remainingMinutes +"m" + remainingSeconds + "s";
     }
-
     public static String getDurationString(int minutes, int seconds){
 
         int hours = minutes / 60;
