@@ -27,7 +27,6 @@ public static void main  (String[] args){
         //    System.out.println("hours1 = " + hours1);
 
        // return hours + "h" + remainingMinutes +"m" + remainingSeconds + "s";
-
     }
 
     public static String getDurationString(int minutes, int seconds){
