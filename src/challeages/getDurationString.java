@@ -6,6 +6,7 @@ public static void main  (String[] args){
         System.out.println(getDurationString(65, 45));
 
     public class String getDurationString(int seconds) {
+
         int minutes = seconds / 60;
         return getDurationString(minutes, seconds);
 
