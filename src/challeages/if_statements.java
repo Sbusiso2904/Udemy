@@ -21,6 +21,7 @@ public class if_statements {
 
     public static  int calculateScore(boolean gameOver, int score, int leveCompleted, int bonus_score){
 
+
         int final_score = score;
 
         if (gameOver){
