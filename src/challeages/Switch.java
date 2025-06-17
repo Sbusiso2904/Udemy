@@ -32,6 +32,8 @@ public class Switch {
 }
 
 public static String getQuarter(){
+
+    // Traditional switch statement
     switch (month){
         case  "January":
         case  "Febraury":
@@ -55,4 +57,5 @@ public static String getQuarter(){
 
 
     }
+    return  "bad";
 }
