@@ -9,7 +9,8 @@ public class  Main{
     public static String getDurationString(int seconds){
 
         if (seconds  < 0){
-            return "Invalid data for seconds(" + seconds + "). moust be positive integer value";
+            return "Invalid data for seconds("
+                    + seconds + "). moust be positive integer value";
         }
 
         int minutes = seconds / 60;
@@ -36,6 +37,10 @@ public class  Main{
     }
 
     public static String getDurationString(int minutes, int seconds){
+        if (seconds  < 0){
+            return "Invalid data for seconds("
+                    + seconds + "). moust be positive integer value";
+        }
 
         int hours = minutes / 60;
 
