@@ -27,5 +27,32 @@ public class Switch {
             System.out.println("Was not 1 or 2");
             break;
     }
-    // More code
+    String month  = "April";
+    System.out.println(month + "is in the" + getQuarter(month) + " quarter");
+}
+
+public static String getQuarter(){
+    switch (month){
+        case  "January":
+        case  "Febraury":
+        case "March":
+            return "1st";
+
+        case "April":
+        case "May":
+        case "June":
+            return "2nd";
+
+        case "July":
+        case "August":
+        case  "September":
+            return "3rd";
+
+        case "October":
+        case "November":
+        case "December":
+             return "4th";
+
+
+    }
 }
