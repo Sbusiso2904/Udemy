@@ -1,5 +1,5 @@
 package challeages;
-public class  Main{
+public class getDurationString {
     public static void main  (String[] args) {
 
         System.out.println(getDurationString(-3945));
@@ -10,8 +10,9 @@ public class  Main{
 
         if (seconds  < 0){
             return "Invalid data for seconds("
-                    + seconds + "). moust be positive integer value";
+                    + seconds + "). must be positive integer value";
         }
+
 
         int minutes = seconds / 60;
         return getDurationString(minutes, seconds);
@@ -40,6 +41,11 @@ public class  Main{
         if (seconds  < 0){
             return "Invalid data for seconds("
                     + seconds + "). moust be positive integer value";
+        }
+
+        if(seconds < 0 || seconds > 59){
+            return " Invalid data for seconds(" + seconds
+                    + "), must be between 0 and 59";
         }
 
         int hours = minutes / 60;
