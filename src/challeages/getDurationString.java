@@ -5,6 +5,9 @@ public class getDurationString {
         System.out.println(getDurationString(-3945));
         System.out.println(getDurationString(-65, 45));
         System.out.println(getDurationString(65, 145));
+        // more test
+        System.out.println(getDurationString(65, 45));
+        System.out.println(getDurationString(3945));
     }
     public static String getDurationString(int seconds){
 
@@ -15,7 +18,7 @@ public class getDurationString {
 
 
         int minutes = seconds / 60;
-        return getDurationString(minutes, seconds);
+        return getDurationString(seconds / 60, seconds % 60);
 
 //        //Two step approach to get hours
 //        int minutes = seconds / 60;
@@ -51,9 +54,9 @@ public class getDurationString {
         int hours = minutes / 60;
 
         int remainingMinutes = minutes % 60;
-        int remainingSeconds = seconds % 60;
+//        int remainingSeconds = seconds % 60;
 
-        return hours + "h" + remainingMinutes + "m" + remainingSeconds + "s";
+        return hours + "h" + remainingMinutes + "m" + seconds + "s";
     }
 }
 
