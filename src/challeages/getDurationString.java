@@ -43,7 +43,7 @@ public class getDurationString {
     public static String getDurationString(int minutes, int seconds){
         if (seconds  < 0){
             return "Invalid data for seconds("
-                    + seconds + "). moust be positive integer value";
+                    + seconds + "). must be positive integer value";
         }
 
         if(seconds < 0 || seconds > 59){
