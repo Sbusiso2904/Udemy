@@ -2,14 +2,15 @@ package Coding_Exercises;
 
 public class NumberOfDaysInMonth {
 
-    public static String IsLeapYear(int year) {
+    public static int getDay(int year) {
         year = (1 -9999);
 
-//        if (year <= 1 || year <= 9999){
-//            return true;
+        if (year <= 1 || year <= 9999){
+            return -1;
 //        } else (!== year){
 //            return false;
 //        }
+
         int month = year;
         switch (month){
             case 0 -> "January";
@@ -29,7 +30,7 @@ public class NumberOfDaysInMonth {
 
     }
 
-    public static int getDaysInMonth(int month, int year) {                                               ]
 
-    }
+
+
 }
