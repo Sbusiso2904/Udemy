@@ -24,13 +24,12 @@ public class NumberOfDaysInMonth {
             case 9 -> "October";
             case 10 -> "Novermber";
             case 11 -> "December";
-            default ->
+            default -> "Invalid month"
         }
 
     }
 
-    public static int getDaysInMonth(int month, int year) {
-
+    public static int getDaysInMonth(int month, int year) {                                               ]
 
     }
 }
