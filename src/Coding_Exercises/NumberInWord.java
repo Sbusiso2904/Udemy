@@ -19,7 +19,6 @@ public class NumberInWord {
             case 8 -> numberInWord = "EIGHT";
             case 9 -> numberInWord = "NINE";
             default -> numberInWord = "OTHER";
-
         }
         System.out.println(numberInWord);
     }
