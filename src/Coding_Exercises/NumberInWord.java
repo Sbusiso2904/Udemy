@@ -2,7 +2,6 @@ package Coding_Exercises;
 
 public class NumberInWord {
 
-
     public static void  printNumberInWord(int number){
 
         String numberInWord;
