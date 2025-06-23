@@ -12,7 +12,6 @@ public class DayOfWeek {
         printWeekDay(6);
         printWeekDay(7);
     }
-
     public static void printDayOfWeek(int day){
 
 
