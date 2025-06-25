@@ -1,25 +1,24 @@
 package challeages;
 
 public class MainWhileEven {
+    int number = 4;
+    int finishNumber = 20;
 
-
-    public static boolean isEvenNumber(int number) {
-        int number = 0;
-
-        while (number % 2 == 0 ){
-            System.out.println("the isEven" + number);
-            number++;
-            if(!= number){
-                System.out.println("the numbre  is odd");
-            }
-
+    while ( number <= finishNumber){
+        number++;
+        if (!isEvenNumber(number)){
+            continue;
         }
-    int number = 0;
-    if(number <= 20){
-        number += 5;
-        System.out.println("even_numbers" + isEvenNumber(););
+        System.out.println("Even number" + number);
     }
 
 
+
+    public static boolean isEvenNumber(int number) {
+        if ((number % 2) == 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
