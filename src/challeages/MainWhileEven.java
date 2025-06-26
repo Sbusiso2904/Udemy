@@ -25,8 +25,6 @@ public class MainWhileEven {
         System.out.println("Total even numbers found = " + evenCount);
     }
 
-
-
     public static boolean isEvenNumber(int number) {
         if ((number % 2) == 0){
             return true;
