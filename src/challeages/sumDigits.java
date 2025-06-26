@@ -10,6 +10,7 @@ public class sumDigits {
     }
 
     public static int sumDigits(int number) {
+
         if (number < 0){
             return -1;
         }
