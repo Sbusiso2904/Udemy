@@ -13,6 +13,7 @@ public class sumDigits {
         if (number < 0){
             return -1;
         }
+
         int sum = 0;
 
         while (number > 9){
