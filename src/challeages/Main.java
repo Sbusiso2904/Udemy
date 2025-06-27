@@ -15,6 +15,7 @@ public class Main {
     }
 
     public static String getInputFromConsole(int currentYear){
+        //Parsing values and reading console input-system.console() overview
 
         String name = System.console().readLine("Hi, What's your Name? ");
         System.out.println("Hi" + name + ", Thanks for taking the course!");
@@ -26,7 +27,8 @@ public class Main {
     }
 
     public static String getInputFromScanner(int currentYear) {
-
+`
+        //Handling Exceptions and introducing the scanner class
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Hi, What's your Name? ");
@@ -39,6 +41,7 @@ public class Main {
         int age = currentYear - Integer.parseInt(dateOfBirth);
 
         return "So you are " + age + "years old";
+
 
     }
 }
