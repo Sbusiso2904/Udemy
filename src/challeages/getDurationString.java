@@ -16,7 +16,6 @@ public class getDurationString {
                     + seconds + "). must be positive integer value";
         }
 
-
         int minutes = seconds / 60;
         return getDurationString(seconds / 60, seconds % 60);
 
