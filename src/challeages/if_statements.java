@@ -18,6 +18,7 @@ public class if_statements {
         System.out.println("The next highScore is " +
             calculateScore(gameOver, score, levelCompleted, bonus));
     }
+
     public static  int calculateScore(boolean gameOver, int score, int leveCompleted, int bonus_score){
 
 
