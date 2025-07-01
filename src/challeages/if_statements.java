@@ -24,7 +24,6 @@ public class if_statements {
 
         int final_score = score;
 
-
         if (gameOver){
             int finalScore = (leveCompleted * bonus_score);
             finalScore += 1000;
