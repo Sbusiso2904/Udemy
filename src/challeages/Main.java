@@ -52,6 +52,7 @@ public class Main {
 
     }
 
+
     public static int checkData(int currentYear, String dateOfBirth) {
 
     }
