@@ -37,11 +37,22 @@ public class Main {
         System.out.println("Hi " + name + ", Thanks for taking the course!");
 
         System.out.println("What year wer you born? ");
-        String dateOfBirth = scanner.nextLine();
-        int age = currentYear - Integer.parseInt(dateOfBirth);
+
+        boolean validDOB = false;
+        int age = 0;
+
+        do {
+            System.out.println("Enter a year of birth >=" +
+                    (currentYear - 125) + " and <= " + (currentYear));
+            String dateOfBirth = scanner.nextLine();
+            age = Integer.parseInt(dateOfBirth);
+        } while (!validDOB);
 
         return "So you are " + age + "years old";
 
+    }
+
+    public static int checkData(int currentYear, String dateOfBirth) {
 
     }
 }
