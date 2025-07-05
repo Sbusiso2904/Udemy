@@ -27,7 +27,7 @@ public class Main {
     }
 
     public static String getInputFromScanner(int currentYear) {
-`
+
         //Handling Exceptions and introducing the scanner class
         Scanner scanner = new Scanner(System.in);
 
@@ -55,7 +55,6 @@ public class Main {
         return "So you are " + age + "years old";
 
     }
-
 
     public static int checkData(int currentYear, String dateOfBirth) {
         int dob = Integer.parseInt(dateOfBirth);
