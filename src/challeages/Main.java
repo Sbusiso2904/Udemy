@@ -14,6 +14,7 @@ public class Main {
         }
     }
 
+
     public static String getInputFromConsole(int currentYear){
         //Parsing values and reading console input-system.console() overview
 
