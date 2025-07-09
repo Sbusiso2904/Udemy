@@ -10,7 +10,7 @@ public class min_max {
         int loopCount = 0;
 
         while(true){
-            System.out.println("Enter a number or any character to exit ");
+            System.out.println("Enter a number or any character to exit? ");
             String nextEntry = scanner.nextLine();
             try {
                 double validNum = Double.parseDouble(nextEntry);
@@ -25,6 +25,7 @@ public class min_max {
                 break;
             }
         }
+
         if (loopCount > 0){
             System.out.println("min= " + min + ", max= " + max);
         }else{
