@@ -31,6 +31,5 @@ public class min_max {
         }else{
             System.out.println("No valid data entered");
         }
-
     }
 }
