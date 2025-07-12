@@ -46,17 +46,20 @@ public class bankAccount {
         this.customerphonenumber = customerphonenumber;
     }
 
-    public static int depositAccount(String accountnumber, double balance) {
-        return 0;
+    public void depositAccount(double depositAmount) {
+        balance += depositAmount;
+        System.out.println("Deposit of R " + depositAmount + "made. New balance is " + balance);
+
     }
 
-    public static int withdrawAccount(String accountnumber, double balance) {
-        if(balance < 0 || balance <= -0){
-            System.out.println("Insufficient balance");
+    public void  withdrawAccount( double withdrawalAmount) {
+        if(balance - withdrawalAmount < 0){
+            System.out.println("Insufficient balance! You have R" + balance +      "in your account");
+        } else {
+            balance -= withdrawalAmount;
+            System.out.println("withdrawal of R" + withdrawalAmount + "processed, Remaining balance R" + balance );
         }
 
-
-        return 0;
     }
 
 }
