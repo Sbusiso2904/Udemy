@@ -7,10 +7,10 @@ public class getDurationString {
         System.out.println(getDurationString(65, 145));
         // more test
         System.out.println(getDurationString(65, 45));
+
         System.out.println(getDurationString(3945));
     }
     public static String getDurationString(int seconds){
-
 
         if (seconds  < 0){
             return "Invalid data for seconds("
