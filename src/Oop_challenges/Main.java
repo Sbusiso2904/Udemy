@@ -4,13 +4,17 @@ public class Main {
     public static void main(String[] args) {
 
 
+        bankAccount SbusAccount = new bankAccount("123456789", 1000.00, "Sbus Mthiya", "SbusMthiya@gmail.com", "(067) 632-5924");
 
-        bankAccount SbusAccount = new bankAccount();
-        SbusAccount.setAccountnumber("123456789");
-        SbusAccount.setBalance(1000.00);
-        SbusAccount.setCustomername("Sbus Mthiya");
-        SbusAccount.setCustomeremail("SbusMthiya@gmail.com");
-        SbusAccount.setCustomername("(067) 632-5924");
+        System.out.println(SbusAccount.getAccountnumber());
+        System.out.println(SbusAccount.getBalance());
+
+//        bankAccount SbusAccount = new bankAccount();
+//        SbusAccount.setAccountnumber("123456789");
+//        SbusAccount.setBalance(1000.00);
+//        SbusAccount.setCustomername("Sbus Mthiya");
+//        SbusAccount.setCustomeremail("SbusMthiya@gmail.com");
+//        SbusAccount.setCustomername("(067) 632-5924");
 
         SbusAccount.withdrawAccount(100.0);
         SbusAccount.depositAccount(250);

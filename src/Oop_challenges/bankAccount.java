@@ -7,6 +7,15 @@ public class bankAccount {
     private String  customeremail;
     private int customerphonenumber;
 
+    //Added constructors
+    public bankAccount(String accountnumber, double balance, String customername, String customeremail, String customerphonenumber) {
+        System.out.println("Bank Account constructor with parameters called");
+    }
+    //Adding constructor chaining
+    public bankAccount(){
+        System.out.println("Empty Constructor called");
+        this("56899", 2.50, "Deflaut name", "Default address", "Default phone");
+    }
 
     public String getCustomername() {
         return customername;
