@@ -11,7 +11,10 @@ public class Worker {
     }
 
     public int getAge(){
-        return 0;
+        int currentYear = 2025;
+        int BirthYear = Integer.parseInt(birthDate.substring(6));
+
+        return currentYear-BirthYear;
     }
 
     public double collectPay(){
@@ -19,6 +22,5 @@ public class Worker {
     }
 
     public void terminate(String endDate){
-        return null;
     }
 }
