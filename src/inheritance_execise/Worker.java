@@ -5,7 +5,7 @@ public class Worker {
     private String birthDate;
     protected String endDate;
     
-    public Worker(String name, String birthDate, String endDate) {
+    public Worker(String name, String birthDate) {
         this.name = name;
         this.birthDate = birthDate;
     }
@@ -19,6 +19,15 @@ public class Worker {
 
     public double collectPay(){
         return 0.0;
+    }
+
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "name='" + name + '\'' +
+                ", birthDate='" + birthDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                '}';
     }
 
     public void terminate(String endDate){
