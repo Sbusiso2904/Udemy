@@ -5,6 +5,6 @@ public class SalariedEmployee {
     public boolean isRetired = false;
 
     public boolean retire(){
-        return true;
+        return isRetired;
     }
 }
