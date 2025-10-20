@@ -1,9 +1,21 @@
 package inheritance_execise;
 
-public class HourlyEmployee {
-    public double hourlyPayRate;
+public class HourlyEmployee  extends Employee{
+
+    private double hourlyPayRate;
+
+    public HourlyEmployee(String name, String birthDate, String hireDate, int annualSalary,
+                          double hourlyPayRate) {
+        super(name, birthDate, hireDate, annualSalary);
+        this.hourlyPayRate = hourlyPayRate;
+    }
+
+    @Override
+    public double collectPay(){
+        return  40 *  hourlyPayRate;
+    }
 
     public double getDoublePay(){
-        return hourlyPayRate;
+        return 2 * collectPay();
     }
 }
