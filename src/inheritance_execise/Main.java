@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Employee sbu = new Employee("Sbu", "29/04/2000", 
-                "20/01/2026");
+                "20/01/2026", 70000);
 
 
         System.out.println(sbu);
@@ -15,8 +15,7 @@ public class Main {
                 "03/03/2025", 70000);
 
         System.out.println(nkosi);
-
-        System.out.println("Pay = $" + nkosi.collectPay());
+        System.out.println("nkosi's PayCheck = $" + nkosi.collectPay());
 
         nkosi.retire();
         System.out.println("nkosi Pension check = $" + nkosi.collectPay());

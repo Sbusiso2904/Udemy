@@ -14,7 +14,8 @@ public class Employee extends Worker {
                 '}' + super.toString();
     }
 
-    public Employee(String name, String birthDate, String hireDate) {
+    public Employee(String name, String birthDate, String hireDate,
+                    int annualSalary) {
         super(name, birthDate);
         this.hireDate = hireDate;
         this.employeeId = Employee.employeeNo++;

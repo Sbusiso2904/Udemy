@@ -33,4 +33,8 @@ public class Worker {
     public void terminate(String endDate){
         this.endDate = endDate;
     }
+
+    public void retire() {
+        this.endDate = endDate;
+    }
 }
