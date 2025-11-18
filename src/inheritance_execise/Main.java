@@ -24,7 +24,7 @@ public class Main {
         HourlyEmployee khona = new HourlyEmployee("khona", "05/05/2005",
                 "15/05/2020", 0, 15);
 
-
+                          
         System.out.println(khona);
         System.out.println("khona's PayCheck = $" + khona.collectPay());
         System.out.println("khona Holiday pay = $" + khona.getDoublePay());
