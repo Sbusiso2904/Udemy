@@ -5,18 +5,6 @@ public class Smartkichen {
     private Refrigerator iceBox;
     private DishWasher dishwasher;
 
-    public DishWasher getDishWasher(){
-        return dishwasher;
-    }
-
-    public Refrigerator getIceBox() {
-        return iceBox;
-    }
-
-    public CoffeeMaker getBrewMaster() {
-        return brewMaster;
-    }
-
     // no arguments construtors
     public Smartkichen(){
         brewMaster = new CoffeeMaker();
@@ -25,7 +13,30 @@ public class Smartkichen {
     }
 
 
+    public DishWasher getDishWasher(){
+        return dishwasher;
+    }
+    public Refrigerator getIceBox() {
+        return iceBox;
+    }
+    public CoffeeMaker getBrewMaster() {
+        return brewMaster;
+    }
+
+
+    public void setKitchenState(boolean coffeeFlag, boolean fridgeFlag, boolean dishWasherFlag) {
+        brewMaster.setHasWorkToDo(coffeeFlag);
+        iceBox.setHasWorkToDo(fridgeFlag);
+        dishwasher.setHasWorkToDo(dishWasherFlag);
+    }
+
+    public void doKichenWork(){
+        brewMaster.brewCoffee();
+        iceBox.OrderFood();
+        dishwasher.DoDishes();
+    }
 }
+
 
 
 class  CoffeeMaker {
