@@ -2,9 +2,31 @@ package Composition_challeages;
 
 public class Smartkichen {
     private CoffeeMaker brewMaster;
-    private DishWasher dishwashrer;
     private Refrigerator iceBox;
+    private DishWasher dishwasher;
+
+    public DishWasher getDishWasher(){
+        return dishwasher;
+    }
+
+    public Refrigerator getIceBox() {
+        return iceBox;
+    }
+
+    public CoffeeMaker getBrewMaster() {
+        return brewMaster;
+    }
+
+    // no arguments construtors
+    public Smartkichen(){
+        brewMaster = new CoffeeMaker();
+        iceBox = new Refrigerator();
+        dishwasher = new DishWasher();
+    }
+
+
 }
+
 
 class  CoffeeMaker {
     private boolean hasWorkToDo;
@@ -21,14 +43,37 @@ class  CoffeeMaker {
     }
 }
 
-class  Refrigerator(){
+class  Refrigerator{
+    private boolean hasWorkToDo;
+
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
+    }
+
+
+    public void OrderFood() {
+        if (hasWorkToDo) {
+            System.out.println("Refrigerator is keeping the food cool");
+            hasWorkToDo = false;
+        }
+    }
 
 }
 
 
-}
+class DishWasher{
+    private boolean hasWorkToDo;
 
-class DishWasher(){
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
+    }
+
+    public void DoDishes() {
+        if (hasWorkToDo) {
+            System.out.println("DishWasher is washing dishes");
+            hasWorkToDo = false;
+        }
+    }
 
 }
 
