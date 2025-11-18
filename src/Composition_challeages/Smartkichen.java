@@ -1,21 +1,34 @@
 package Composition_challeages;
 
 public class Smartkichen {
-    private int addWater;
-    private int pourMilk;
-    private boolean setkichen;
+    private CoffeeMaker brewMaster;
+    private DishWasher dishwashrer;
+    private Refrigerator iceBox;
+}
 
+class  CoffeeMaker {
+    private boolean hasWorkToDo;
 
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
+    }
 
-public String Refrigerator(){
+    public void brewCoffee() {
+        if (hasWorkToDo) {
+            System.out.println("CoffeeMaker is already brewing");
+            hasWorkToDo = false;
+        }
+    }
+}
+
+class  Refrigerator(){
+
+}
 
 
 }
 
-public String DishWasher(){
+class DishWasher(){
 
 }
 
-public String CoffeeMaker(){
-
-}
